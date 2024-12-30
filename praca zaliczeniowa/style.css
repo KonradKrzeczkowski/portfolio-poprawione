@@ -853,7 +853,11 @@ footer>div>nav>ul>li {
         display: none;
     }
 }
-
+@media (max-width: 720px) {
+    #divAddMyProjects {
+        max-width: 93%;
+    }
+}
 @media (min-width: 1920px) {
 
     main,
