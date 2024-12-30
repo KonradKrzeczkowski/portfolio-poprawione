@@ -1,0 +1,864 @@
+:root {
+    font-size: 16px;
+    font-family: roboto;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    --backgroundColor: #1f2041;
+    --fontWhite: #ffffff;
+    --backgroundColorSecond: #f9f9f9;
+    --boxshadow: #00000040;
+    --projectshadow: #00000025;
+    --valid: #af0808;
+    --projectUl: #f1ebe1;
+    --buttonRemove: #adb6c4;
+    --fontColor: #1f2041;
+    --label: #7e7e7e;
+}
+
+body {
+    background-color: var(--backgroundColor);
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+}
+
+.conteinerMain {
+    background-color: var(--backgroundColorSecond);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.conteiner {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+#divheaderName {
+    display: grid;
+    align-items: center;
+}
+
+header>div>nav>ul>li {
+    list-style: none;
+}
+
+header>div>nav>ul>li>button,
+.displayFooter>ul>li>button {
+    font-size: 16px;
+    font-family: roboto;
+    font-weight: 700;
+}
+
+.bigNav>nav {
+    width: 37.5rem;
+}
+
+.bigNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: inherit;
+    border: inherit;
+}
+
+header {
+    height: 28.9375rem;
+    background-color: var(--backgroundColor);
+    padding: 2.3125rem 7.5rem 0 7.5rem;
+    width: 100%;
+}
+
+header>div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto);
+}
+
+.bigNav>nav>ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+}
+
+#headerName {
+    color: var(--fontWhite);
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(2, auto);
+    padding: 5.375rem 12rem;
+}
+
+#headerName>span {
+    font-family: league gothic;
+    font-size: 6rem;
+}
+
+#headerName>p {
+    font-family: league spartan;
+    font-size: 2rem;
+}
+
+main {
+    min-height: 50vh;
+    background-color: var(--backgroundColorSecond);
+    width: 100%;
+    display: grid;
+}
+
+main>.divAddHome {
+    color: var(--backgroundColor);
+    text-align: start;
+}
+
+.sectionHome {
+    padding: 5.25rem 15.0625rem 0;
+}
+
+.divAddHome>section>img {
+    width: 100%;
+}
+
+.sectionHome>div>article>p,
+main>div> :first-child>div>div>p {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: league spartan;
+}
+
+.divAddHome:nth-child(2) {
+    height: 12.5rem;
+}
+
+.sectionThird {
+    display: flex;
+    padding-bottom: 5.25rem;
+    justify-content: center;
+}
+
+.sectionMyExpirience {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 15.0625rem 5.25rem 15.0625rem;
+    gap: 4.725rem;
+}
+
+.ulExperience {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0;
+    margin: 0;
+}
+
+.divProjectTechnology {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 0.15625rem;
+    width: 11.375rem;
+    height: 4.3125rem;
+    align-items: center;
+}
+
+.ulExperience>img {
+    width: 0.75rem;
+    height: 0.75rem;
+}
+
+.arrowButton {
+    margin: 0 1.71875rem;
+    height: 3.75rem;
+    width: 3.75rem;
+    background-color: var(--buttonRemove);
+    box-shadow: 0 0.125rem 0.25rem 0 var(--boxshadow);
+    border-radius: 8px;
+}
+
+.divExpirience {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    gap: 0.625rem;
+}
+
+.divExpirienceDotted {
+    height: 0.75rem;
+}
+
+.divExperienceLi {
+    margin: 0;
+}
+
+.divProjectTechnology>img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.divExpirience>p {
+    padding: 0;
+    margin: 0;
+    color: var(--buttonRemove);
+}
+
+#divAddMyProjects {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 43.75rem;
+    background-color: var(--backgroundColorSecond);
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    box-shadow: 0 0.125rem 0.25rem 0 var(--boxshadow);
+}
+
+.divInputBox>span {
+    font-size: 12px;
+    text-align: start;
+}
+
+.divInputBox>label {
+    font-family: League Spartan;
+    font-weight: 700;
+}
+
+.exitButton {
+    padding: 0.5rem;
+}
+
+.sectionCarusel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    padding: 0 8.6875rem 5.25rem 8.6875rem;
+    gap: 2.5625rem;
+}
+
+.sectionCarusele {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    padding: 0 8.6875rem 5.25rem 8.6875rem;
+    gap: 2.5625rem;
+}
+
+.divInputBox {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    /* padding: 1.875rem; */
+}
+
+.inputBox> :first-child {
+    padding-bottom: 2.8125rem;
+}
+
+.divInputBox>label {
+    text-align: left;
+    padding-bottom: 1.6875rem;
+}
+
+.divInputBox>input {
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 0.125rem solid var(--fontColor);
+    background-color: var(--backgroundColorSecond);
+}
+
+.divInputBox>input> ::placeholder {
+    color: var(--label);
+}
+
+.validSpan {
+    color: var(--valid);
+    font-size: 12px;
+}
+
+#spanTitle,
+#spanTechnology {
+    display: block;
+    height: 12px;
+    padding-top: 3px;
+}
+
+#inputTechnologies:focus,
+#inputTitleProject:focus {
+    outline: none;
+}
+
+.inputBox {
+    padding: 1.6875rem 7.5rem 2.5625rem 7.5rem;
+}
+
+.divExitButton {
+    text-align: right;
+}
+
+.blur {
+    filter: blur(0.25rem);
+}
+
+.nonBlur {
+    filter: blur(0rem);
+}
+
+.divProjectCollection {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding-bottom: 5.25rem;
+    gap: 2.5625rem;
+}
+
+.divButton {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+#divAddMyProject {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divProject {
+    background-image: url(.//pictureProject/divProject.png);
+    max-width: 22.5rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    padding: 0;
+    height: 460px;
+    box-shadow: 0 0.25rem 0.25rem 0 var(--projectshadow);
+}
+
+.divProject>ul {
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-family: roboto;
+    color: var(--projectUl);
+    text-align: left;
+    padding: 1rem 1rem 0;
+    margin: 0;
+}
+
+.divProject>ul>li {
+    color: var(--fontWhite);
+    font-family: roboto;
+    text-align: left;
+    font-size: 1rem;
+    padding: 2.5rem 0 0 0;
+    margin-left: 2rem;
+    font-weight: 400;
+}
+
+#section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#buttonRemove {
+    display: flex;
+    color: #1f2041;
+    border-radius: 0.5rem;
+    padding: 0.9375rem 3.0625rem;
+    margin: 5.25rem 0;
+    gap: 1.5rem;
+    background-color: var(--buttonRemove);
+    align-items: center;
+    box-shadow: 0 0.25rem 0.25rem 0 var(--boxshadow);
+}
+
+.sectionCarusel>span {
+    font-family: League Spartan;
+    font-weight: 700;
+}
+
+.secttionAbout {
+    padding: 5.25rem 10.0625rem 0 10.0625rem;
+    max-width: 60rem;
+}
+
+.secttionAbout>img {
+    width: 100%;
+}
+
+.divConteinerAbout {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.secttionAbout>article>span {
+    font-size: 2rem;
+    font-weight: 700;
+    color: --backgroundColor;
+    display: flex;
+    text-align: start;
+    font-family: roboto;
+    margin: 0;
+}
+
+.articelAddAbout {
+    display: grid;
+    gap: 2.5rem;
+    padding-top: 4.0625rem;
+}
+
+.secttionAbout>article>p {
+    text-align: start;
+    font-family: Roboto;
+    margin: 0;
+}
+
+.divButtonContact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5.25rem 0 5.25rem 0;
+}
+
+.buttonAboutContact {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1.5rem;
+    background-color: var(--buttonRemove);
+    box-shadow: 0 0.25rem 0.25rem 0 var(--boxshadow);
+    align-items: center;
+    padding: 0.9375rem 3.0625rem;
+    border-radius: 0.5rem;
+}
+
+.divContactMe {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    padding: 4.0625rem 7.5rem;
+}
+
+.buttonContactMe {
+    padding: 0.9375rem 3.0625;
+    background-color: #adb6c4;
+    width: 15rem;
+    height: 3.75rem;
+    border-radius: 0.5rem;
+    gap: 1.5rem;
+    box-shadow: 0 0.25rem 0.25rem 0 var(--boxshadow);
+    font-family: roboto;
+    font-size: 1rem;
+    color: var(--fontColor);
+}
+
+.divContactMe>div {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.divContactMe>span {
+    font-size: 2rem;
+    color: var(--fontColor);
+    text-align: left;
+    font-weight: 700;
+}
+
+.divContactMe>form>div>input,
+.divContactMe>form>div>div>input {
+    background-color: var(--backgroundColorSecond);
+}
+
+.divContactMe>form>div>label,
+.divContactMe>form>div>div>label {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--fontColor);
+    font-family: League Spartan;
+}
+
+.divContactMe>form>div>input::placeholder,
+.divContactMe>form>div>div>input::placeholder {
+    font-size: 1rem;
+    color: var(--label);
+    font-family: roboto;
+}
+
+.divNameEmail {
+    display: flex;
+    width: 100%;
+    gap: 4.0625rem;
+    padding: 4.0625rem 0 1.5625rem 0;
+}
+
+.inputcontact {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    width: 50%;
+}
+
+.inputcontact>input {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid 2px #1f2041;
+}
+
+.inputcontact>label {
+    text-align: start;
+    padding-bottom: 1.6875rem;
+}
+
+#inputContactMeName,
+#inputContactMeEmail,
+#inputContactMeMessage {
+    outline: none;
+}
+
+.divMessageInput {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    width: 100%;
+    padding-bottom: 3.125rem;
+}
+
+#spanNameContact,
+#spanEmailContact,
+#spanMessageContact {
+    display: block;
+    height: 12px;
+    padding-top: 3px;
+    font-size: 12px;
+    text-align: start;
+}
+
+.validate {
+    color: var(--valid);
+}
+
+.divMessageInput>input {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid 2px #1f2041;
+}
+
+.divMessageInput>label {
+    padding-bottom: 1.6875rem;
+    text-align: start;
+}
+
+.divButtonMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.messageDiv {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    text-align: start;
+}
+
+.sectionMessage {
+    display: grid;
+    padding: 4.0625rem 7.5rem;
+    gap: 4.0625rem;
+    font-family: League Spartan;
+    font-weight: 700;
+}
+
+footer {
+    background-color: var(--backgroundColor);
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    width: 100%;
+    padding: 4.625rem 5rem;
+}
+
+footer> :first-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer>div>nav {
+    text-align: start;
+}
+
+.footer_position {
+    text-align: right;
+    align-content: end;
+}
+
+footer>div>div>span {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    gap: 2.75rem;
+}
+
+footer>div>img {
+    padding: 2.75rem 0 3.75rem 0;
+}
+
+footer>div>nav>ul {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    gap: 2.75rem;
+}
+
+footer>div>nav>ul>li {
+    list-style: none;
+}
+
+.footer_position>span {
+    color: var(--fontWhite);
+}
+
+.buttonModal {
+    display: flex;
+    color: #1f2041;
+    justify-content: center;
+    border-radius: 0.5rem;
+    padding: 0.9375rem 3.0625rem;
+    margin-bottom: 4rem;
+    gap: 1.5rem;
+    background-color: var(--buttonRemove);
+    align-items: center;
+    box-shadow: 0 0.25rem 0.25rem 0 var(--boxshadow);
+}
+
+.divButtonAddProject {
+    display: flex;
+    justify-content: center;
+}
+
+.dltButton {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--backgroundColorSecond);
+    border-radius: 8px;
+    margin: 0 0.5rem 0.5rem 0;
+}
+
+@media (max-width: 1023px) {
+    header {
+        position: relative;
+        padding: 0.625rem 1rem 0 0.625rem;
+    }
+
+    #headerName {
+        padding: 3.5625rem 1rem;
+    }
+
+    .sectionMyExpirience {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        padding: 0 6.375rem 5.25rem 6.375rem;
+        gap: 4.78125rem;
+    }
+
+    .sectionCarusele,
+    .sectionCarusel {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        justify-content: center;
+        grid-template-rows: auto;
+        gap: 2.5625rem;
+        margin: 0;
+    }
+
+    .sectionCarusele {
+        margin-bottom: 5.25rem;
+    }
+
+    .sectionCarusel {
+        margin: 5.25rem 0;
+    }
+
+    .divProject {
+        width: 300px;
+    }
+
+    .buttonHamburgerMenu {
+        display: flex;
+        justify-content: right;
+    }
+
+    .divHamburgerMenu {
+        position: absolute;
+        top: 2.8125rem;
+        width: 12.5rem;
+        right: 0rem;
+        border-top: 0.0625rem var(--backgroundColorSecond) solid;
+        border-bottom: 0.0625rem var(--backgroundColorSecond) solid;
+        background-color: #1f2041;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        font-size: 1rem;
+        font-family: roboto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .divHamburgerMenu>nav>ul>button {
+        display: flex;
+        padding-bottom: 1.875rem;
+        font-family: roboto;
+        font-weight: 700;
+        font-size: 1rem;
+        color: var(--backgroundColorSecond);
+    }
+
+    .divHamburgerMenu>nav>ul {
+        padding: 1.75rem 0 1.75rem 2.3125rem;
+    }
+
+    .sectionMyExpirience {
+        padding: 0 1rem;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        justify-content: center;
+    }
+
+    .sectionHome {
+        padding: 5.25rem 1rem 0;
+    }
+
+    .secttionAbout {
+        padding: 4.0625rem 1rem 0 1rem;
+    }
+
+    #divAddMyProjects {
+        position: absolute;
+        top: 25%;
+        right: 0;
+        width: 100%;
+    }
+
+    .buttonModal {
+        margin-bottom: 2.5rem;
+    }
+
+    #divAddMyProjects {
+        max-width: 43.75rem;
+    }
+
+    .inputBox {
+        padding: 0.4375rem 0.725rem 1.5625rem 0.725rem;
+    }
+
+    .inputBox> :first-child {
+        padding-bottom: 1.5625rem;
+    }
+
+    .buttonContactMe {
+        margin: 0;
+    }
+}
+
+@media (max-width: 764px) {
+    header {
+        height: 30.25rem;
+        padding: 1rem 0.625rem 0 0.625rem;
+    }
+
+    .bigNav {
+        display: none;
+    }
+
+    .footer:first-child {
+        display: flex;
+    }
+
+    .displayFooter {
+        display: none;
+    }
+
+    footer {
+        display: row;
+        flex-direction: row;
+        justify-content: center;
+        padding: 1rem 0.625rem 0 0.625rem;
+    }
+
+    #headerName {
+        padding-top: 6.5rem;
+    }
+
+    #headerName>span {
+        font-family: league gothic;
+        font-size: 4rem;
+    }
+
+    .sectionCarusel,
+    .sectionCarusele {
+        padding: 0 0.625rem;
+    }
+
+    .secttionAbout {
+        padding: 4.0625rem 1rem 0 1rem;
+    }
+
+    .sectionMessage {
+        display: grid;
+        padding: 4rem 0.625rem;
+        gap: 4.0625rem;
+        font-family: League Spartan;
+        font-weight: 700;
+    }
+
+    .divNameEmail {
+        display: block;
+        width: 100%;
+        gap: 4.0625rem;
+        padding: 2.5rem 0 0 0;
+    }
+
+    .divContactMe {
+        display: grid;
+        grid-template-rows: repeat(4, auto);
+        padding: 5.25rem 0.625rem;
+    }
+
+    .inputcontact {
+        padding-bottom: 2.5rem;
+        width: 100%;
+    }
+
+    #divAddMyProjects {
+        position: absolute;
+        top: 25%;
+        right: 0;
+        width: 100%;
+        background-color: var(--backgroundColorSecond);
+        display: grid;
+        grid-template-rows: repeat(4, auto);
+        box-shadow: 0 0.125rem 0.25rem 0 var(--boxshadow);
+    }
+}
+
+@media (min-width: 765px) {
+    .smallNav {
+        display: none;
+    }
+
+    .divHamburgerMenu {
+        display: none;
+    }
+
+    .navHamburgerMenu {
+        display: none;
+    }
+}
+
+@media (min-width: 1920px) {
+
+    main,
+    header,
+    footer {
+        max-width: 1920px;
+    }
+}

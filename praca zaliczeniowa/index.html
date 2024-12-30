@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Gothic&family=League+Spartan:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Gothic&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Gothic&family=League+Spartan:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="conteiner">
+      <header>
+        <div class="smallNav">
+          <img src="./vector/itp.png" alt="ITP" />
+          <div class="buttonHamburgerMenu">
+            <button id="buttonHamburger">
+              <img
+                class="imgHamburgerMenuClass"
+                id="imgHamburgerMenu"
+                src="./vector/hamburgerMenu.png"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="bigNav">
+          <img src="./logo/logo_header.png" alt="" />
+          <nav>
+            <ul class="noneActive">
+              <li>
+                <button class="activButtonHome" id="buttonHome">HOME</button>
+              </li>
+              <li>
+                <button class="activButtonProject" id="buttonProject">
+                  PROJECTS
+                </button>
+              </li>
+              <li>
+                <button class="activButtonAbout" id="buttonAbout">ABOUT</button>
+              </li>
+              <li>
+                <button class="activButtonContact" id="buttonContact">
+                  CONTACT
+                </button>
+              </li>
+              <li>
+                <button class="activButtonMessage" id="buttonMessage">
+                  MESSAGES
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div id="headerName"></div>
+      </header>
+    </div>
+    <div class="conteinerMain"><main></main></div>
+    <div class="conteiner">
+      <footer>
+        <div>
+          <nav class="displayFooter">
+            <ul>
+              <li>
+                <button id="buttonHomes">HOME</button>
+              </li>
+              <li>
+                <button class="activButtonProject" id="buttonProjects">
+                  PROJECTS
+                </button>
+              </li>
+              <li>
+                <button class="activButtonAbout" id="buttonAbouts">
+                  ABOUT
+                </button>
+              </li>
+              <li>
+                <button class="activButtonContact" id="buttonContacts">
+                  CONTACT
+                </button>
+              </li>
+              <li>
+                <button id="buttonMessages">MESSAGES</button>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer_position">
+            <span>krzeczkowski.konrad@gmail.com</span
+            ><span>+0048783666569</span>
+          </div>
+        </div>
+        <div class="footer_position">
+          <img src="./logo/logo_footer.png" alt="Logo ITP" />
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="about.js"></script>
+    <script src="project.js"></script>
+    <script src="contact.js"></script>
+    <script src="message.js"></script>
+  </body>
+</html>
